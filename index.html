@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"> welcom to <span>mo<span class="ro">ro</span>cco</span> </a>
+
+    <nav class="navigation">
+      <a href="#марокканские города">города</a>
+      <a href="#Услуги">Услуги</a>
+      <a href="#contact">отзывами и раздел с контактами</a>
+      <a href="#Откройте для себя Марокко">Откройте для себя Марокко</a>
+      
+
+
+    </nav>
+
+  </header>
+  <section class="main">
+    <div>
+      <h2>Здравствуйте <br><span>Добро пожаловать в Марокко</span></h2>
+      <h3>Вот ваш путеводитель по Марокко</h3>
+      <a href="#марокканские города" class="min-btn">марокканские города</a>
+      <div class="my-socail-icons">
+        <a href="https://vk.com/ilovemorocco?from=search"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://vk.com/ilovemorocco?from=search"><i class="fa-brands fa-vk"></i></a>
+        <a href="https://vk.com/ilovemorocco?from=search"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/morocco/?hl=ar"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/urgpunpi_official"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </section >
+  <section class="cards" id="Услуги">
+    <h2 class="title"> Услуги</h2>
+    <div class="content">
+      <div class="card">
+        <div>
+          <a href="https://www.royalairmaroc.com/ru-en"><img src="pngwing.com(1).png" class="logor" alt=""></a>
+          <div class="info">
+            <h3>билет на самолет</h3>
+            <p>Для путешествия в Марокко существует прямой рейс из Марокко в Россию по маршруту Касабланка-Москва. Есть
+              семь рейсов в день, которые выполняет компания Royal Air Maroc — марокканская международная авиакомпания.
+              Для бронирования просто нажмите на изображение самолета.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div> <img src="Salut Maroc! Hotel in Essaouira, Morocco (@salutmaroc) • Instagram photos and videos.jpeg"
+            class="hotel" alt="">
+          <div class="info">
+            <h3>hotel</h3>
+            <p>Для путешествия в Марокко существует прямой рейс из Марокко в Россию по маршруту Касабланка-Москва. Есть
+              семь рейсов в день, которые выполняет компания Royal Air Maroc — марокканская международная авиакомпания.
+              Для бронирования просто нажмите на изображение самолета.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="trip-wrapper" id="Откройте для себя Марокко">
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Откройте для себя Марокко</h1>
+      <p>Спланируйте своё идеальное путешествие по вашему желанию</p>
+    </div>
+  </div>
+
+  <div class="container" >
+    <h2>Спланируйте своё путешествие</h2>
+
+    <label>Выберите город :</label>
+    <select id="city">
+      <option value="300">Марракеш</option>
+      <option value="250">Касабланка</option>
+      <option value="280">Танжер</option>
+      <option value="270">Рабат</option>
+      <option value="270">Фес</option>
+      <option value="270">Ифран</option>
+      <option value="270">Бени-Меллаль</option>
+      <option value="270">Шефшауэн</option>
+    </select>
+
+    <label> Тип проживания :</label>
+    <select id="hotel">
+      <option value="200"> Отель 3 звезды</option>
+      <option value="350"> Отель 4 звезды</option>
+      <option value="500"> Отель 5 звезды</option>
+      <option value="150"> Марокканская баня (хаммам)</option>
+    </select>
+
+    <label>Культурные туры:</label>
+    <select id="tour">
+      <option value="100">Посещение исторических достопримечательностей</option>
+      <option value="180"> Экскурсия в пустыню</option>
+      <option value="140">Посещение водопадов Узуд</option>
+      <option value="120"> Тур по старому городу</option>
+    </select>
+
+    <label>Количество дней:</label>
+    <input type="number" id="days" value="1" min="1">
+
+    <button onclick="calcPrice()"> Рассчитайте стоимость</button>
+
+    <div id="result"></div>
+  </div>
+
+</div>
+  <section class="марокканские-города" id="марокканские города">
+  <h2 class="title">Марокканские города</h2>
+  
+  <div class="cities-gallery">
+    <div class="city">
+      <img src="image/casa2.jpeg" alt="Касабланка">
+      <div class="city-info">
+        <h3>Касабланка</h3>
+        <p>Крупнейший город Марокко и его экономический центр. Современная архитектура, шумные улицы и мечеть Хасана II делают его символом современной страны.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="image/Rabat is a green city.jpeg" alt="Рабат">
+      <div class="city-info">
+        <h3>Рабат</h3>
+        <p>Столица Марокко, где сочетаются древняя история и современность. Известен крепостью Удайя и уютной мединой у океана.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="image/fez.jpeg" alt="Фес">
+      <div class="city-info">
+        <h3>Фес</h3>
+        <p>Духовное сердце Марокко и старейший университет мира — Аль-Карауин. Узкие улочки и ремесленные мастерские создают атмосферу средневекового Востока.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="image/𝚃𝚊𝚗𝚐𝚒𝚎𝚛 - 𝙼𝚘𝚛𝚘𝚌𝚌𝚘.jpeg" alt="Танжер">
+      <div class="city-info">
+        <h3>Танжер</h3>
+        <p>Город у пролива Гибралтар, соединяющего Атлантику и Средиземное море. Исторический перекрёсток культур Африки и Европы.</p>
+      </div>
+    </div> 
+    <div class="city">
+      <img src="image/Ifrane, Marocco.jpeg" alt="Танжер">
+      <div class="city-info">
+        <h3>Ифран </h3>
+        <p> необычный город в горах Среднего Атласа, который часто называют «марокканской Швейцарией». Он известен своей чистой европейской архитектурой с остроконечными крышами, холодными снежными зимами и хвойными лесами. Здесь также находится престижный Университет Аль-Ахвайн..</p>
+      </div>
+    </div>
+
+     <div class="city">
+      <img src="image/Beni Mellal city.jpeg" alt="Фес">
+      <div class="city-info">
+        <h3>Бени-Меллаль </h3>
+        <p>  город в центральной части Марокко, расположенный у подножия гор Среднего Атласа. Он известен своими плодородными равнинами, источниками и служит важным сельскохозяйственным и торговым центром региона. Главная достопримечательность — крепость Касба Тадла..</p>
+      </div>
+
+    </div>
+     <div class="city">
+      <img src="image/MARRAKECH _ MOROCCO.jpeg" alt="Фес">
+      <div class="city-info">
+        <h3>Марракеш </h3>
+        <p>  один из самых важных имперских городов Марокко, расположенный у подножия Атласных гор. Его называют «Красным городом» из-за цвета зданий. Марракеш славится своей мединой, оживлённой площадью Джемаа аль-Фана, садами и дворцами, привлекая туристов со всего мира.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="image/Tabara in desert.jpeg" alt="Фес">
+      <div class="city-info">
+        <h3>Марокканская Сахара</h3>
+        <p> Это обширная территория пустыни на юге Марокко, известная своими песчаными дюнами (эргами), оазисами и уникальной культурой кочевников. Крупнейший город региона — Эль-Аюн. Эта территория имеет особый статус и активно развивается Марокко.</p>
+      </div>
+    </div>
+
+    <div class="city">
+      <img src="image/Chefchaouen, Morocco.jpeg" alt="Шефшауэн">
+      <div class="city-info">
+        <h3>Шефшауэн</h3>
+        <p>Голубой город в горах Риф, известный своими синими улочками и спокойной атмосферой. Одно из самых фотогеничных мест Марокко.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="cader contact" id="contact"> </section>
+  <h2 class="title">отзывами и раздел с контактами</h2>
+</body>
+<section class="cader-contact" id="contact">
+
+  <div class="content">
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="info3">
+          <h3>почта</h3>
+          <p>mohamd19ziani@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-phone"></i>
+        <div class="info3">
+          <h3>телефон</h3>
+          <p>+7 950 853 67 12.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function calcPrice() {
+  let city = Number(document.getElementById("city").value);
+  let hotel = Number(document.getElementById("hotel").value);
+  let tour = Number(document.getElementById("tour").value);
+  let days = Number(document.getElementById("days").value);
+
+  let total = (city + hotel + tour) * days;
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").innerHTML = "💰Суммарные расходы" + total + " Дирхам";
+}
+</script>
+
+
+
+<footer class="footer">
+  <p class="footer-">зиани мохаммед <span>Создатель веб-сайта</span></p>
+  <div class="my-socail-icons">
+        <a href="https://vk.com/ilovemorocco?from=search"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://vk.com/ilovemorocco?from=search"><i class="fa-brands fa-vk"></i></a>
+        <a href="https://vk.com/ilovemorocco?from=search"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/morocco/?hl=ar"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/urgpunpi_official"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+
+</footer>
+
+</html>
