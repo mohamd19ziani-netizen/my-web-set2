@@ -49,7 +49,7 @@ section{
   min-height:  100vh;
   display: flex;
   align-items: center;
-  background: url(image/hasan1.jpg) no-repeat;
+  background: url(hasan1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -168,7 +168,7 @@ section{
 }
 
 .cards{
-  background-image: url(image/pngwing.com\ \(5\).png);
+  background-image: url(pngwing.com\ \(5\).png);
  background-size: 10%;
   background-position: center;
   padding: 100px;
@@ -192,7 +192,7 @@ footer{
   padding-right:100px ;
 }
 .марокканские-города {
-  background-image: url(image/Morocco\ Wallpaper\ Best.jpg);
+  background-image: url(Morocco\ Wallpaper\ Best.jpg);
   background-size: cover;
   background-position: center;
   padding: 100px 50px;
